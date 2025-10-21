@@ -1,0 +1,41 @@
+/* EventItem.css */
+.event-item {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  margin: 12px 0;
+  padding: 14px 18px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.event-item:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-header h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.event-date {
+  margin: 6px 0 0;
+  font-style: italic;
+  color: #cfd8dc;
+}
+
+.event-details {
+  margin-top: 10px;
+  color: #e6f7ff;
+  line-height: 1.4;
+}
+

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Front Page",
+    "content": "Welcome to *The Grizzly Cyber Sentinel*! Your go-to source for cybersecurity updates, events, and highlights from the CIAT Cybersecurity Club."
+  },
+  {
+    "title": "The President's Weekly Message",
+    "content": "This week, we’re focusing on teamwork and knowledge sharing. Every member brings unique insight — let’s keep learning from each other!"
+  },
+  {
+    "title": "Member Spotlight",
+    "link": "/memberspotlight",
+    "content": "Celebrate our members’ achievements! This week’s spotlight features students who earned new certifications and led successful club activities."
+  },
+  {
+    "title": "Security Spotlight",
+    "content": "Our Security Spotlight explores trending cyber threats, defensive tactics, and member-led research findings from this month."
+  },
+  {
+    "title": "Coach's Corner",
+    "content": "Your cybersecurity coach shares new training tips to prepare for real-world challenges and upcoming competitions."
+  },
+  {
+    "title": "Calendar of Events",
+    "link": "/events",
+    "content": "View all scheduled meetings, workshops, and competitions on our events calendar."
+  },
+  {
+    "title": "From the Editor's Desk",
+    "content": "Our editorial team reflects on recent activities, lessons learned, and member contributions to *The Grizzly Cyber Sentinel*."
+  }
+]

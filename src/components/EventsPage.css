@@ -1,0 +1,152 @@
+.events-page {
+  position: relative;
+  min-height: 100vh;
+  color: #e6faff;
+  background-color: #000;
+  overflow-x: hidden;
+  font-family: "Orbitron", sans-serif;
+}
+
+.overlay {
+  background: radial-gradient(circle at center, rgba(0, 15, 25, 0.9), rgba(0, 0, 0, 0.95));
+  min-height: 100vh;
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.events-title {
+  font-size: 2.8rem;
+  text-shadow: 0 0 25px #00ffff;
+  margin-bottom: 40px;
+}
+
+/* Calendar */
+.calendar-section {
+  margin: 40px 0;
+}
+
+.calendar-section h2 {
+  font-size: 2rem;
+  color: #00ffff;
+}
+
+.calendar-placeholder {
+  color: #b8f2ff;
+  font-style: italic;
+  margin-bottom: 60px;
+}
+
+/* Timeline Section */
+.timeline-section {
+  margin-top: 60px;
+  position: relative;
+  padding: 50px 0;
+}
+
+.timeline-section h2 {
+  color: #00ffff;
+  text-shadow: 0 0 15px #00ffff;
+  margin-bottom: 40px;
+}
+
+/* Default vertical layout */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  max-width: 700px;
+  border-left: 3px solid rgba(0, 255, 255, 0.4);
+  padding-left: 30px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #00ffff;
+  box-shadow: 0 0 15px #00ffff, 0 0 25px #00cccc;
+  animation: pulse 2s infinite;
+}
+
+.timeline-content {
+  background: rgba(0, 20, 30, 0.85);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+  transition: 0.3s;
+}
+
+.timeline-content:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #00cccc;
+  margin-bottom: 8px;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px #00ffff, 0 0 30px #00cccc;
+  }
+  50% {
+    transform: scale(1.3);
+    box-shadow: 0 0 25px #00ffff, 0 0 50px #00cccc;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px #00ffff, 0 0 30px #00cccc;
+  }
+}
+
+/* ===== Responsive horizontal timeline (desktop view) ===== */
+@media screen and (min-width: 900px) {
+  .timeline {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-left: none;
+    border-top: 3px solid rgba(0, 255, 255, 0.4);
+    padding-left: 0;
+    padding-top: 30px;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .timeline-item {
+    margin-bottom: 0;
+    margin-right: 60px;
+    flex: 0 0 300px;
+  }
+
+  .timeline-dot {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-content {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .timeline-date {
+    color: #00cccc;
+    margin-bottom: 8px;
+  }
+}
+

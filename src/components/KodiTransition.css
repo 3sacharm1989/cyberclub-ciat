@@ -1,0 +1,40 @@
+.kodi-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: lime;
+  font-size: 2rem;
+  font-family: monospace;
+  overflow: hidden;
+  position: relative;
+}
+
+.kodi-text {
+  margin-top: 20px;
+  text-shadow: 0 0 10px #00ff00;
+  z-index: 2;
+}
+
+.screen-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(0, 255, 0, 0.2), transparent 70%);
+  z-index: 1;
+}
+
+.fade-out {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 3;
+  pointer-events: none;
+}

@@ -1,0 +1,66 @@
+.alumni-auth-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #b8faff;
+  padding: 30px;
+  background: rgba(0, 20, 30, 0.85);
+  border: 1px solid #00ffff;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+}
+
+.alumni-auth-box h2 {
+  color: #00ffff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.alumni-auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  background: rgba(0, 10, 20, 0.8);
+  border: 1px solid #00ffff;
+  border-radius: 5px;
+  color: #00ffff;
+}
+
+.alumni-auth-box button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #00ffff;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.alumni-auth-box button:hover {
+  background: #00cccc;
+}
+
+.error {
+  color: #ff6666;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.toggle-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.toggle-link {
+  color: #00ffff;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.toggle-link:hover {
+  color: #00cccc;
+}

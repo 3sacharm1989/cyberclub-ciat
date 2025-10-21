@@ -1,0 +1,29 @@
+/* AnnouncementsCarousel.css */
+.announcements-carousel {
+  margin: 20px 0 40px;
+  text-align: center;
+  color: #4db8ff;
+}
+
+.carousel-title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.announcements-carousel .slick-slide h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 12px 0;
+  color: #e0f7ff;
+}
+
+.slick-dots li button:before {
+  color: #4db8ff;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+}
+

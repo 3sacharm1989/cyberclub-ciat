@@ -1,0 +1,34 @@
+[
+  {
+    "id": "hoodie-kodi",
+    "name": "Kodi Bear Hoodie",
+    "price": 48.0,
+    "category": "Apparel",
+    "image": "/merch/hoodie.png",
+    "desc": "Mid-weight black hoodie with neon Kodi crest."
+  },
+  {
+    "id": "tee-zero-trust",
+    "name": "Zero Trust Tee",
+    "price": 22.5,
+    "category": "Apparel",
+    "image": "/merch/tee.png",
+    "desc": "Super-soft tee with ‘Never trust, always verify.’"
+  },
+  {
+    "id": "sticker-pack",
+    "name": "Cyber Sticker Pack",
+    "price": 8.0,
+    "category": "Accessories",
+    "image": "/merch/stickers.png",
+    "desc": "Glossy stickers: Kodi, binary rain, cyber crest."
+  },
+  {
+    "id": "ctf-kit",
+    "name": "CTF Field Kit",
+    "price": 35,
+    "category": "Gear",
+    "image": "/merch/ctfkit.png",
+    "desc": "Notebook, badge lanyard, ‘red/blue’ field cards."
+  }
+]

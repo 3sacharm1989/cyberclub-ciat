@@ -1,0 +1,172 @@
+.alumni-login-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #000, #02141c 90%);
+  color: #e6faff;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Binary background */
+.binary-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Vault Animation */
+.vault-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 5;
+}
+
+.vault-door-left,
+.vault-door-right {
+  width: 50%;
+  background: radial-gradient(circle at center, #00222e, #000);
+  height: 100%;
+}
+
+.vault-crest {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  opacity: 0.15;
+  filter: drop-shadow(0 0 50px #00ffff);
+}
+
+/* Hologram Effect */
+.holo-scan {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 255, 255, 0.05),
+    rgba(0, 255, 255, 0.2),
+    rgba(0, 255, 255, 0.05)
+  );
+  z-index: 10;
+}
+
+.alumni-crest-holo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  opacity: 0.1;
+  filter: drop-shadow(0 0 80px #00ffff);
+  z-index: 11;
+}
+
+/* Login Interface */
+.alumni-login-box {
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.alumni-login-box h1 {
+  color: #00ffff;
+  text-shadow: 0 0 20px #00ffff;
+}
+
+.cipher-hint {
+  margin: 20px auto;
+  max-width: 400px;
+  background: rgba(0, 20, 30, 0.5);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.alumni-login-box input {
+  background: rgba(0, 20, 30, 0.8);
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  padding: 10px;
+  margin-top: 10px;
+  width: 250px;
+  text-align: center;
+  outline: none;
+}
+
+.alumni-login-box button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: none;
+  background: #00ffff;
+  color: #000;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.alumni-login-box button:hover {
+  background: #00cccc;
+}
+
+.error-text {
+  color: #ff3b3b;
+  margin-top: 10px;
+}
+
+.back-btn {
+  margin-top: 30px;
+  background: transparent;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: rgba(0, 255, 255, 0.1);
+}
+
+/* Decrypting Access Key Phase */
+.decrypting-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #00ffff;
+  z-index: 15;
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #0099ff;
+}
+
+.decrypting-text {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.decrypting-progress {
+  width: 300px;
+  height: 10px;
+  background: rgba(0, 255, 255, 0.1);
+  border-radius: 5px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #00ffff, #0077ff);
+  box-shadow: 0 0 20px #00ffff;
+  border-radius: 5px;
+}

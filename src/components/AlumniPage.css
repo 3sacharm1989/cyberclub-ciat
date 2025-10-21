@@ -1,0 +1,252 @@
+.alumni-page {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #000, #020b12 85%);
+  overflow-x: hidden;
+  color: #e6faff;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Crest background */
+.crest-background {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  z-index: 0;
+  pointer-events: none;
+}
+.alumni-crest {
+  width: 540px;
+  opacity: 0.1;
+  filter: drop-shadow(0 0 60px #00ffff);
+}
+
+/* Content */
+.alumni-content {
+  position: relative;
+  z-index: 2;
+  padding: 110px 8% 80px;
+}
+
+/* Hero */
+.hero h1 {
+  font-size: 2.6rem;
+  text-align: center;
+  color: #00ffff;
+  text-shadow: 0 0 18px #00ffff, 0 0 28px #0099ff;
+  margin-bottom: 12px;
+}
+.intro-text {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 16px;
+  color: #b8f2ff;
+}
+.hint {
+  margin-top: 8px;
+  color: #9cd9e6;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.auth-bar {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.auth-bar button {
+  background: #00ffff; color: #000; border: none;
+  padding: 8px 14px; border-radius: 6px; cursor: pointer;
+}
+
+/* Announcements */
+.announcement-featured {
+  margin: 14px auto 8px;
+  max-width: 900px;
+  text-align: center;
+  background: rgba(0, 255, 255, 0.08);
+  border: 1px solid rgba(0, 255, 255, 0.35);
+  color: #dffcff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: 0 0 16px rgba(0, 255, 255, 0.12);
+}
+.announcement-rotator {
+  margin: 6px auto 14px;
+  max-width: 900px;
+  text-align: center;
+  min-height: 32px;
+}
+.announcement-item {
+  color: #9be6ff;
+  text-shadow: 0 0 8px rgba(0,255,255,0.25);
+}
+
+/* Section headings */
+.featured-section h2,
+.community-section h2,
+.directory-section h2,
+.jobs-section h2 {
+  text-align: center;
+  margin: 56px 0 18px;
+  color: #00ffff;
+  text-shadow: 0 0 16px #00ffff;
+}
+
+/* Featured */
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (min-width: 900px) {
+  .featured-grid { grid-template-columns: 1fr 1fr; }
+}
+.featured-card {
+  background: rgba(0, 20, 30, 0.8);
+  border: 1px solid rgba(0,255,255,0.35);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 18px rgba(0,255,255,0.12);
+}
+.featured-card img {
+  width: 110px; height: 110px; border-radius: 50%;
+  object-fit: cover; border: 2px solid #00ffff; margin-bottom: 10px;
+}
+.featured-card .badge {
+  position: absolute; top: 14px; left: 14px;
+  background: #00ffff; color: #000; font-weight: 700;
+  padding: 4px 8px; border-radius: 6px; font-size: 0.8rem;
+}
+.featured-card .badge.gold { background: #f5d76e; }
+.role { color: #9be6ff; margin-bottom: 8px; }
+blockquote {
+  color: #c7f7ff; font-style: italic; margin: 6px auto 0; max-width: 520px;
+}
+
+/* Community chat */
+.chat-box {
+  background: rgba(0, 18, 26, 0.8);
+  border: 1px solid rgba(0,255,255,0.35);
+  border-radius: 12px; padding: 16px;
+  max-width: 900px; margin: 0 auto;
+  box-shadow: 0 0 18px rgba(0,255,255,0.08);
+}
+.messages {
+  max-height: 300px; overflow-y: auto; padding-right: 6px;
+}
+.message {
+  background: rgba(0,255,255,0.05);
+  border-left: 3px solid #00ffff;
+  padding: 10px; margin: 8px 0;
+  border-radius: 6px;
+}
+.chat-input {
+  display: flex; gap: 8px; margin-top: 10px;
+}
+.chat-input input {
+  flex: 1; background: rgba(0, 20, 30, 0.9);
+  border: 1px solid #00ffff; color: #00ffff;
+  padding: 10px; border-radius: 6px;
+}
+.chat-input button {
+  background: #00ffff; color: #000; border: none;
+  padding: 10px 16px; border-radius: 6px; cursor: pointer;
+}
+
+/* Directory + DM */
+.directory-section .subtle { text-align: center; color: #a9e4f7; margin-bottom: 8px; }
+.alumni-list {
+  max-width: 900px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr; gap: 12px;
+}
+@media (min-width: 700px) {
+  .alumni-list { grid-template-columns: 1fr 1fr; }
+}
+.alumni-card {
+  background: rgba(0, 20, 30, 0.78);
+  border: 1px solid rgba(0,255,255,0.35);
+  border-radius: 10px; padding: 14px 16px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.alumni-card .small { color: #9ad7ea; font-size: 0.9rem; }
+.alumni-card .outline {
+  background: transparent; color: #00ffff; border: 1px solid #00ffff;
+  padding: 8px 12px; border-radius: 8px; cursor: pointer;
+}
+
+/* Jobs */
+.job-intro {
+  text-align: center; color: #b8f2ff; margin-bottom: 16px;
+}
+.job-actions {
+  display: flex; justify-content: center; gap: 10px; margin-bottom: 10px;
+}
+.add-job-btn {
+  background: rgba(0,255,255,0.1);
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.job-form {
+  max-width: 900px; margin: 0 auto 14px; display: grid; gap: 10px;
+}
+.job-form input, .job-form textarea {
+  background: rgba(0, 20, 30, 0.9);
+  border: 1px solid #00ffff; color: #00ffff;
+  padding: 10px; border-radius: 6px;
+}
+.job-form-actions {
+  display: flex; gap: 8px; justify-content: flex-end;
+}
+.job-form .outline {
+  background: transparent; color: #00ffff; border: 1px solid #00ffff;
+  padding: 8px 12px; border-radius: 8px; cursor: pointer;
+}
+
+.job-grid {
+  max-width: 1000px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr; gap: 16px;
+}
+@media (min-width: 900px) {
+  .job-grid { grid-template-columns: 1fr 1fr; }
+}
+.job-card {
+  background: rgba(0, 20, 30, 0.86);
+  border: 1px solid rgba(0,255,255,0.35);
+  border-radius: 12px; padding: 16px;
+}
+.job-card .company { color: #9be6ff; margin-bottom: 8px; }
+.job-card .chip {
+  background: rgba(0,255,255,0.08); color: #00ffff; border: 1px solid #00ffff;
+  padding: 6px 10px; border-radius: 999px; cursor: pointer; font-size: 0.9rem;
+}
+.job-details { overflow: hidden; }
+.job-card .description { margin: 8px 0; color: #e6faff; }
+.deadline { color: #ffd66b; font-size: 0.9rem; }
+.apply-btn {
+  display: inline-block; margin-top: 6px;
+  background: #00ffff; color: #000; border: none;
+  padding: 8px 12px; border-radius: 6px; text-decoration: none;
+}
+
+/* Toast */
+.toast {
+  position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+  background: rgba(0, 18, 26, 0.95); color: #e6faff;
+  border: 1px solid #00ffff; border-radius: 10px;
+  padding: 10px 16px; z-index: 50;
+  box-shadow: 0 0 18px rgba(0,255,255,0.2);
+}
+
+
+
+

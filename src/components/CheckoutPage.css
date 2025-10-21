@@ -1,0 +1,123 @@
+.checkout-page {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at top, #001018, #000);
+  color: #e0faff;
+  font-family: "Share Tech Mono", monospace;
+  overflow: hidden;
+}
+
+.checkout-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 255, 255, 0.05),
+    transparent 4px
+  );
+  animation: flicker 8s infinite alternate;
+}
+
+@keyframes flicker {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+.checkout-container {
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 40px;
+  background: rgba(0, 20, 30, 0.85);
+  border: 1px solid #00ffff;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+  text-align: center;
+}
+
+.checkout-title {
+  font-size: 2rem;
+  color: #00ffff;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.checkout-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(0, 40, 50, 0.4);
+  border: 1px solid #00ffff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.checkout-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.checkout-summary {
+  margin-top: 20px;
+}
+
+.checkout-summary h3 {
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.checkout-summary button {
+  background: linear-gradient(90deg, #00ffff, #0099ff);
+  border: none;
+  color: #000;
+  font-weight: bold;
+  padding: 8px 16px;
+  margin: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkout-summary button:hover {
+  background: linear-gradient(90deg, #00e0ff, #00ffff);
+  box-shadow: 0 0 15px #00ffff;
+}
+
+.empty-cart {
+  margin-top: 30px;
+}
+
+.empty-cart p {
+  color: #b8f6ff;
+  margin-bottom: 15px;
+}
+
+.empty-cart button {
+  background: rgba(0, 255, 255, 0.2);
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.empty-cart button:hover {
+  background: rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 15px #00ffff;
+}
